@@ -95,7 +95,7 @@ a {
 }
 
 .showcase-item{
-    width: 38.5%;
+    width: 35%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
