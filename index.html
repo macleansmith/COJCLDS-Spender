@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spend the LDS Church's Money!</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script id="buy-item-template" type="text/x-handlebars-template">
+        {{#each item}}
+        <div class="showcase-item">
+            <h4 class="item-title">{{this.name}}</h4>
+            <img src="{{this.image}}" alt="">
+            <p id="price">${{this.displayPrice}}</p>
+            <div class="quantity-bar">
+                <input type="number" id="{{this.inputId}}" class="hello" name="{{this.price}}">
+                <button class="buy-button">Buy</button>
+            </div>
+        </div>
+        {{/each}}
+    </script>
+</head>
+<body>
+    <a href="about.html" id="about">About</a>
+    <div class="container">
+        <header class="header">
+            <div class="header-top">
+                <img src="css/img/angel.jpg" alt="" id="angel-left">
+                <img id="rusty" src="css/img/Russel.jpg">
+                <img src="css/img/angel.jpg" alt="" id="angel-right">
+            </div>
+            <h1 id="title">Spend the <em>Corporation of the President of the Church of Jesus Christ of Latter-Day Saints'</em> rainy day fund!</h1>
+            <p id="instructions">Instructions: You've been given the opportunity and responsibility to spend the Mormon Church's money! You have billions to spend! Will you help the world or use it for personal gain? YOU DECIDE!</p>
+        </header>
+    </div>
+
+    <div id="money-counter">$125,000,000,000 left!</div>
+
+    <div id="achievements" class="achievements"></div>
+    <hr id="break" style="display: none;">
+    <div id="spent" class="achievements"></div>
+
+    <div class="container showcase" id="showcase">
+        
+        
+    </div>
+
+    <footer>
+        <p>Copyright &copy; 2020, TheRealJoeSmith</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
